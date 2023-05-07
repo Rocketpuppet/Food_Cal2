@@ -44,7 +44,7 @@ class HomePage(generic.ListView):
             "time" : new_recipe.parse_time(),
         }
 
-        return JsonResponse(data, safe=False)
+        return JsonResponse(data)
 
     @staticmethod
     def delete(request, id):
