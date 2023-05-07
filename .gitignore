@@ -2,3 +2,4 @@
 .idea
 .vs
 db.sqlite3
+venv
