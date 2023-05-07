@@ -31,6 +31,7 @@ class HomePage(generic.ListView):
     def post(self, request):
         return HttpResponseRedirect(reverse("calculator:homepage"))
     
+    @csrf_exempt
     def addItem(request):
         new_recipe = Recipe(recipe_name=request.POST.get('name'), servings=1, descripton=request.POST.get("desc"))
         new_recipe.save()
