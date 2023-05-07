@@ -1,0 +1,61 @@
+
+{% load static %}
+<link href="{% static 'static.css' %}" rel="stylesheet"/>
+<script src = '{% static "js/jquery.js" %}'></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+<ul>
+{% for ing in object_list %}
+
+<li id = {{ing.id}}>Ingredent Name: {{ing.ing_name}} Price per unit: {{ing.price_per_unit}}  Measurement type: {{ing.measurement_type}}
+  <form action="{% url 'calculator:ing_delete' ing.id %}" method="POST" name="delButton" id="{{ing.id}}">{% csrf_token %}<button>Delete</button></form></li>
+
+{% endfor %}
+
+</ul>
+
+<br/>
+<fieldset>
+  <legend><h1>Add a new ingredent</h1></legend>
+  <form action="" method="POST">
+    {% csrf_token %}
+    Ingredent name: <input type="text" name="ing_name" value="">
+    Price per unit:
+    <input type="text" name="price_per_unit" value = "">
+    Measurement type:
+    <select name="m_u">
+      <option value="mL">mL</option>>
+      <option value="L">L</option>>
+      <option value="g">g</option>>
+      <option value="kg">kg</option>>
+      <option value="oz">oz</option>
+    </select>
+    <input type="submit" value="Post"/>
+    </form>
+</fieldset>
+
+
+<script>
+
+var delElement = function(event){
+  event.preventDefault();
+  var self = this;
+  $.post($(this).parent().attr("action"), $(this).parent().serialize() + "&id=" + $(this).parent().attr("id"), function(data){
+    if(data!=null){
+      console.log($(this).parent().serialize())
+      $(self).parent().remove();
+    }
+  });
+};
+
+  
+  $(document).ready(function(){
+    $("[name=delButton]").click(delElement);
+  })
+  
+</script>
+  
+  
+
+

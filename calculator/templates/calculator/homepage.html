@@ -1,0 +1,142 @@
+{% load static %}
+<link href="{% static 'static.css' %}" rel="stylesheet"/>
+<script src = '{% static "js/jquery.js" %}'></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+{% load bootstrap5 %}
+
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+<h1 class="tHead">Recipe Price Calculator</h1>
+
+  <input class ="lookupBar" name="search" id="search">
+
+  <div class = "listElementCont">
+    <div class="list-group" id="recipe_list">
+      <div href="#" class="list-group-item list-group-item-action" aria-current="true" hidden="true" id="mockEl">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1" name="title"></h5>
+          <small name="timestamp">3 days ago</small>
+        </div>
+        <p class="mb-1" name="desc">Some placeholder content in a paragraph.</p>
+        <form action="#" method = "POST" name="form">{% csrf_token %}<button id='delete' name='delete' class='btn btn-danger'>Delete</button></form>
+      </div>
+      {% for recipe in recipe_list %}
+      <div href="{% url 'calculator:ing_list' recipe.id %}" class="list-group-item list-group-item-action" aria-current="true" name="recipeEl">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1" name="title"><a href="{% url 'calculator:ing_list' recipe.id %}">{{recipe.recipe_name}}</a></h5>
+          <small name="timestamp">{{recipe.parse_time}}</small>
+        </div>
+        <p class="mb-1" name="desc">{{recipe.descripton}}</p>
+        <form action="{% url 'calculator:recipe_delete' recipe.id %}" method = "POST">{% csrf_token %}<button id='delete' name='delete' class='btn btn-danger'>Delete</button></form>
+      </div>
+      {% endfor %}
+    </div>
+    </div>
+
+    <div name="recipe form" class="recipeForm">
+    <h1 class="recipeFormHeading">New Recipe</h1>
+<form action="" method="POST" id="recipe_data" name="recipe_adder">
+  <div name="recipe_name_form" class="input-group mb-3">
+      <span class="input-group-text" id="addon">Recipe name:</span> 
+      <input type="text" name="name" value="New recipe" class="form-control">
+  </div>
+  <div name="recipe_desc" class="input-group mb-3">
+    <span class="input-group-text" id="addon">Recipe descripton:</span>
+    <textarea name="desc" value="recipe descripton" class="form-control"></textarea>
+  </div>
+      {% csrf_token %}
+    <div name="submit button" class="input-group-mb-3">
+      <input type="submit" value="Post" id="submit" class="btn btn-primary">
+    </div>
+</form>
+</div>
+
+<script>
+
+$("#search").on("input", function(){
+  $("[name=recipeEl]").remove()
+  $.post("search_recipe/", {"name":$("#search").val()}, function(data){
+    console.log(data);
+    $("#search").autocomplete("option", "source", data)
+    refresh(data)
+  })
+  
+  
+})
+
+$("#search").autocomplete({source:[], select: function(event, ui){
+  event.preventDefault();
+  $("#search").val(ui.item.label)
+}})
+
+var delElement = function(event){
+    event.preventDefault();
+    var element = $(this).parent().parent();
+    $.post($(this).parent().attr("action"),
+    $(this).parent().serialize() + "&id=" + $(this).parent().parent().attr("id"),
+    function(data){
+      if(data=="Deleted"){
+        element.remove();
+      }
+    });
+    console.log($(this).parent().serialize() + "&id=" + $(this).parent().parent().attr("id"));
+}
+$(document).ready(function(){
+  console.log("ready");
+$("[name=delete]").click(delElement);
+})
+
+let submitbutton = document.getElementById("submit")
+
+var addElement = function(event){
+  event.preventDefault();
+  console.log($(this).parent().parent().serialize());
+  $.post("{% url 'calculator:add_recipe' %}",
+  $(this).parent().parent().serialize(),
+    function(data){
+      if(data!=null){
+        let recipe_name = $('[name="name"]').val();
+        console.log(data)
+        let li = $("#mockEl").clone();
+        li.removeAttr("hidden");
+        li.find("[name=delete]").click(delElement);
+        li.attr("name", "recipeEl")
+        li.find("[name=timestamp]").text(data["time"])
+        li.find("[name=desc]").text(data["desc"])
+        li.find("[name=title]").append('<a href='+data["url"]+' id='+data["id"]+'>'+recipe_name+'</a>');
+        li.find("[name=form]").attr("action", data["del_url"]);
+
+        $("#recipe_list").append(li);
+        
+        console.log(recipe_name);
+      }
+  })
+}
+var refresh = function(data){
+  for(let i=0;i<data.length; i++){
+    if(data[i]!=null){
+        let recipe_name = data[i]["label"]
+        let li = $("#mockEl").clone();
+        li.removeAttr("hidden");
+        li.find("[name=delete]").click(delElement);
+        li.attr("name", "recipeEl")
+        li.find("[name=timestamp]").text(data[i]["date"])
+        li.find("[name=desc]").text(data[i]["desc"])
+        li.find("[name=title]").append('<a href='+data[i]["url"]+' id='+data[i]["id"]+'>'+recipe_name+'</a>');
+        li.find("[name=form]").attr("action", data[i]["del_url"]);
+
+        $("#recipe_list").append(li);
+        
+      }
+  }
+    
+}
+
+
+
+submitbutton.addEventListener("click", addElement);
+
+</script>

@@ -1,0 +1,45 @@
+.listElementCont {
+    width : 400px;    
+    margin : auto;
+    margin-top: 40px;
+
+}
+
+.recipeForm {
+    width: 600px;
+    margin : auto;
+    text-align: center;
+}
+
+.recipeFormHeading { 
+    color: darkturquoise;
+    margin-top: 25px;
+}
+
+.tHead {
+ font-size: 80px;
+ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ text-align: center;
+ border-bottom: 5px solid black;
+ margin-bottom: 10px;
+
+}
+
+.lookupBar {
+    font-size: 30px;
+    margin : auto;
+    display: block;
+    margin: 0 auto
+}
+
+.NumIngFilter {
+    width : 200px;
+}
+
+.marginFix {
+    margin : 5px;
+}
+
+#hidden {
+    display: none;
+}

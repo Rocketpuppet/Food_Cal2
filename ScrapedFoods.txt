@@ -1,0 +1,446 @@
+Banana,0.32,$1.30 / kg
+Avocado,2.15,None
+PC Organic Banana,2.18,None
+Honeycrisp Apple,2.11,$8.45 / kg
+Red Seedless Grapes,8.8,None
+Lemon,0.99,None
+Bartlett Pear,1.45,$7.25 / kg
+Limes,0.79,None
+Organic Blueberries,7.65,None
+Cantaloupe Melon,4.99,None
+Green Seedless Grapes,10.56,About 1.2 kg / package
+Avocado Bag,5.5,None
+Green Kiwi,1.05,None
+Granny Smith Apple,1.31,$7.25 / kg
+Pomegranate,2.7,None
+Strawberries,6.99,1 lb
+Royal Gala Apple,1.05,$6.15 / kg
+Navel Orange,1.32,$4.39 / kg
+Blueberries Package,8.75,1.13 lb
+Mini Seedless Watermelon,7.65,None
+Navel Orange,None,5 lb
+Raspberries,None,None
+Blueberries Package,5.45,12 oz
+Driscoll's Organic Blackberries,6.55,None
+PC Organic Gala Apples,8.8,3 lb
+Avocados,7.7,3 lb
+Un Branded Raspberries Pint,8.75,None
+Mandarin Clementine Bag,8.8,2 lb
+Un Branded Raspberries Pint,8.75,None
+Mandarin Clementine Bag,8.8,2 lb
+President's Choice Cara Cara Navel Oranges,7.7,3 lb
+Pink Lady (Cripps) Apple,1.45,$7.25 / kg
+English Seedless Cucumber,2.49,None
+Green Onions (Scallions),1.99,None
+Cilantro Bunch,1.6,per lb
+The Laughing Cow Jalapeno,14.25,535 g
+Garlic,1.05,3 ct
+Iceberg Lettuce,5.45,None
+Yellow Onion,2.49,3 lb
+Broccoli,4.49,None
+Carrot,4.35,2 lb
+Peak Of The Market Celery Stalks,4.49,None
+Romaine Lettuce,None,None
+Organic Ginger Root,3.25,None
+Un Branded Roma Tomatoes,7.25,None
+Roma Tomato,8.8,None
+Red Onion Bag,5.5,3 lb
+Red Sweet Mini Pepper,2.72,$10.90 / kg
+Mini Cucumber,7.65,None
+Un Branded Green Sweet Peppers,8.45,None
+Farmer's Market Tomato Grape,9.9,907 g
+President's Choice White Mushroom,5.5,454 g
+Un Branded Red Beefsteak Tomato,None,each
+Farmer's Market Potatoes Russet,None,4540 g
+Red Grape Tomato Package,None,9.98 oz
+Asparagus,7.0,$14.50 / kg
+No Name Sans Nom Mixed Sweet Peppers,5.5,1113 g
+Romaine Heart,6.99,3 ct
+PC Regular Baby Spinach,4.35,142 g
+Un Branded Green Zucchini,6.0,None
+Un Branded Green Zucchini,6.0,None
+Yellow Potato,6.6,10 lb
+White Onion,2.36,$6.75 / kg
+Mini Cucumber,5.5,6 ct
+No Name Sans Nom Paper Towels,7.65,6 ct
+President's Choice Super Soft 2-Ply Bathroom Tissue Mega Rolls,8.75,12 ct
+Cashmere Double Roll 2-Ply Bathroom Tissue Paper,13.15,12 ct
+Gain Moonlight Breeze Liquid Fabric Softener,20.85,4.85 L
+Fleecy 199-Loads Fresh Air Liquid Fabric Softener,15.35,4.7 L
+Bounty Select-A-Size White Paper Towels Rolls,12.05,4 ct
+President's Choice 2 Ply Max Bathroom Tissue Rolls,8.75,12 ct
+Bounty Select-A-Size Paper Towels, White, 8 Triple Rolls = 24 Regular Rolls, 8 Count,32.95,8 ct
+Fleecy 110 Loads Rosewater Scent Pure Balance Liquid Fabric Softener,10.75,2.6 L
+Fleecy 110-Loads Aroma Therapy Calm Liquid Fabric Softener,10.75,2.6 L
+Cashmere Ultra Double-Roll Premium 3-Ply Bathroom Tissue,None,24 ct
+Charmin Bathroom Tissue Roll,26.35,18 ct
+President's Choice Bath Tissue Roll,24.15,30 ct
+Fleecy 148 Loads Fresh Air Liquid Fabric Softener,13.15,3.5 L
+Fleecy Pure Lily Pure Balance Liquid Fabric Softener,10.75,2.6 L
+No Name Sans Nom Facial Tissue,8.75,6 ct
+Charmin Ultra Soft Bathroom Tissues Mega Rolls,20.85,12 ct
+Glad ForceFlex Drawstring Garbage Bags With Febreze Fresh Clean Scent - White - Tall 45 Litres,14.25,50 ct
+Fleecy 148 Loads Liquid Fabric Softener Aroma Therapy Calm,13.15,3.5 L
+Fleecy Fresh Air 110 Loads Liquid Fabric Softener,10.75,2.6 L
+Bounty White Select-A-Size Paper Towels,None,6 ct
+Charmin Bathroom Tissue,None,24 ct
+Glad Compostable Biodegradable Bags,21.95,100 ct
+Fleecy Calm Aroma Therapy Fabric Softener Dryer Sheets,12.05,200 ct
+Fleecy Fabric Softener Sheet Vanilla,6.0,80
+Tide Pods Spring Meadow Scent Laundry Detergent,27.45,81 ct
+Tide Ultra Oxi HE Compatible Liquid Laundry Detergent,27.45,154 fl oz
+Kleenex Ultra Soft & Strong Facial Tissues,21.95,16 ct
+Fleecy Original Fresh Scent Fabric Softener Sheets,6.0,80 ct
+Fleecy Fresh Air,12.05,200 ct
+President's Choice Max 55-Sheet Paper Towel Rolls,9.85,6 ct
+Ziploc Freezer Bags Large, with Grip 'n Seal Technology,13.15,60 ct
+Royale Velour Bathroom Tissue,14.25,15 ct
+Glad Compostable Biodegradable Bags,21.95,100 ct
+Glad Small Compostable Bags,9.85,20 ct
+Cottonelle Flip-Top Flushable Wet Wipes,16.45,None
+Gain Aroma Boost Liquid Laundry Detergent Original Scent HE Compatible,20.85,None
+President's Choice Max Paper Towels,14.25,8 ct
+Glad Blue Force Flex Plus Tall Kitchen Drawstring Trash Bags,14.25,50 ct
+Pine-Sol Spring Blossom Multi Surface Cleaner,6.55,1410 ml
+No Name Sans Nom 67 Liter Regular Garbage Bag,7.65,40 ct
+Charmin Ultra Strong Toilet Paper,None,12 ct
+President's Choice 2 Ply Super Soft Hypoallergenic Bathroom Tissue,16.45,242 ct
+Pine-Sol Cleaner Liquid,6.55,1410 ml
+Pine-Sol Multi-Surface Cleaner Original,16.45,4.25 L
+No Name Sans Nom Double Rolls Bathroom Tissue,12.05,24 ct
+None,None,None
+None,None,None
+Glad ForceFlex Drawstring Garbage Bags With Febreze Fresh Clean Scent - White - Tall 45 Litres,14.25,50 ct
+Glad Easy-Tie 74 Liter Black Regular Garbage Bags,13.15,40 ct
+ROYALE Tiger Towel Double Paper Towel,10.95,3 ct
+Kleenex 3 Ply Soothing Lotion Facial Tissues,12.05,3 ct
+Cottonelle Ultra ComfortCare 2-Ply Mega Roll Toilet Paper,18.65,12 ct
+Glad White Garbage Bags - Febreze Fresh Clean Scent, Small,14.25,100 ct
+Clorox Disinfecting Liquid Bleach,5.45,1.27 L
+Glad 45 Liter Tall Easy Tie Kitchen With Febreze Fresh Clean Scent,14.25,60 ct
+Arm & Hammer Original Clean Burst Concentrated Detergent,16.45,5.67 L
+Scotties Supreme Facial Tissue,10.95,88 ct
+Clorox Original Scented Liquid Bleach,8.2,3.57 L
+Clorox Organic Liquid Bleach,4.35,1 L
+Tide Free & Gentle Liquid Laundry Detergent,16.45,69 fl oz
+No Name Sans Nom Bath Tissue,8.75,24 ct
+Liquid Plumr Pro Drain Cleaner,14.25,2370 ml
+Royal Chinet 8.75" Luncheon Paper Plates,8.75,40 ct
+Cashmere Bathroom Toilet Roll,29.65,24 ct
+Scotties Facial Tissue multi-pack,26.35,126
+Gain 42 Loads Flings Moonlight Breeze Laundry Detergent Pacs,15.9,941 g
+Royal Chinet 10 .4" Dinner Plates,9.85,40 ct
+Lysol Twin Pack Power Toilet Bowl Cleaner,8.75,2 x 710 ml
+Glad White Garbage Bags - Febreze Fresh Clean Scent, Small,14.25,100 ct
+Royale Velour Bathroom Tissue Rolls,26.35,30 ct
+No Name Sans Nom Cp Compostable Bags,14.25,100 ct
+Scotties 6 X126 Facial Tissue,10.95,756 ct
+Ziploc Sandwich Bags, with Grip 'n Seal Technology,6.0,90 ct
+Reynolds 30.5cm x 22.9m Parchment Paper,7.1,None
+Reynolds Unbleached Compostable Parchment Paper Rolls,4.9,35 ft
+No Name Sans Nom Regular Quick Tie Kitchen Garbage Bags,6.55,None
+Royale Tiger Towel Recyclable Paper Pack 2 Equal 6 Paper Towel Rolls,10.95,2 ct
+Glad Small Easy Tie White Unscented Trash Bags,9.85,48 ct
+No Name Sans Nom Paper Towel,10.95,12 ct
+Clorox Liquid-Plumr Drain Cleaner Pro,8.75,900 ml
+Tide 2x 24 Loads High Efficiency Original Liquid Laundry Detergent,9.85,1090 ml
+Lysol All Purpose Lemon Cleaner,4.9,650 ml
+Tide 48 Loads Original 2X HE Liquid Laundry Detergent,16.45,2 L
+Lysol Power Toilet Bowl Cleaner,None,710 ml
+Glad Small Compostable Bags,9.85,20 ct
+Tide High Efficiency Scent Free & Gentle 24 Load Liquid Laundry Detergent,None,2 x 1.09 L
+Glad Tall Compostable Bags,9.85,10 ct
+No Name Sans Nom Mega Paper Towel Rolls,10.95,6 ct
+Glad Kitchen Catcher Roommate,9.85,52 ct
+Clorox Liquid-Plumr Pro Strength Urgent Clear Clog Remover,8.75,502 ml
+President's Choice 12 Double Rolls Green Bathroom Tissue,8.75,None
+No Name Sans Nom 45 Liter Quick Tie Tall Kitchen Garbage Bags,6.55,None
+No Name Sans Nom Kitchen Compostable Liner,6.0,20 cm
+Arm & Hammer Clean Fresh Scent Liquid Laundry Detergent,7.65,2.21 L
+Borax Twenty Mule Team,8.75,1840 g
+Scotch-Brite No Scratch Sponge,4.9,3 ct
+Glad Garbage Bags - Black,13.15,30 ct
+No Name Sans Nom Sandwich Bag,3.8,100 ct
+No Name Sans Nom Large Resealable Freezer Bag,7.65,30 ct
+No Name Sans Nom Bath Tissue,6.55,12 ct
+No Name Sans Nom All Purpose Reusable Cloths,3.8,10 ct
+Ziploc Freezer Bags Medium, with Grip 'n Seal Technology,6.0,19 ct
+No Name Sans Nom Mixed Scour Sponges,5.45,9 ct
+Mr. Clean Magic Eraser Extra Power,5.45,2 ct
+Windex Original Glass and Window Cleaner Trigger,5.45,765 ml
+Ziploc Snack Bags, with Grip 'n Seal Technology,6.0,90 ct
+method Pink Grapefruit All Purpose Spray,5.45,828 ml
+Lysol KitchenPro Power Degreaser Antibacterial Kitchen Cleaner,4.9,650 ml
+Mr. Clean Multi-Purpose Febreze Meadows & Rain Cleaner,5.45,1330 ml
+Windex Multisurface Antibacterial Disinfectant Cleaner Trigger, Citrus,5.45,765 ml
+Lysol Power & Fresh Lavender Breeze Multi Surface Cleaner,4.9,1.5 L
+Clorox Organic Liquid Bleach,4.35,1 L
+Scotch-Brite Heavy Duty Scrub Sponge,4.9,3 ct
+Clorox Original Scented Liquid Bleach,8.2,3.57 L
+Allens Double Strength Cleaning Vinegar,3.6,2500 ml
+Vim Bleach Cream,3.8,500 ml
+President's Choice Large Heavy-Duty Freezer Bags,7.65,28 ct
+S.O.S Steel Wool Pads,3.25,10 ct
+No Name Sans Nom Automatic Toilet Bowl Cleaner,3.25,96 g
+No Name Sans Nom Facial Tissue,2.2,126 ct
+President's Choice 3-Ply Facial Tissues Lotion,2.2,None
+Kleenex Pocket-Size Pack of Tissues,4.35,80 ct
+Comet Cleaner Powder,1.6,600 g
+Vim Lemon Scent Cream Cleaner,3.8,500 ml
+Fleecy Original Fresh Scent Fabric Softener Sheets,6.0,80 ct
+Tide Simply Clean & Fresh Daybreak Fresh Liquid Laundry Detergent,14.25,3.4 L
+OxiClean Max Force Stain Remover,10.75,1360 g
+No Name Sans Nom Compostable Green Bin Liner,None,10 ct
+No Name Sans Nom Cp Regular Club Pack Garbage Bag Kit,7.65,100 ct
+Clorox Bathroom Cleaner Bleach Foamer,4.9,887 ml
+OxiClean White Revive Laundry Stain Remover Powder,10.75,1.28 kg
+No Name Sans Nom Lunch Paper Plates,6.55,None
+Kleenex 3-Ply Facial Tissues,13.15,3 ct
+Gain Original Scent HE Compatible Aroma Boost Liquid Laundry Detergent,8.75,1.36 L
+Royale 3-Ply Ultra Facial Tissue,10.95,528 ct
+No Name Sans Nom Large Drawstring Garbage Bag,7.65,20 ct
+Ziploc Freezer Bags Medium, with Grip 'n Seal Technology,13.15,75 ct
+Royale Original 2 Ply Facial Tissue,10.95,6 ct
+Snuggle 60 Wash Load Cuddle Fresh Fabric Softener,8.55,1.47 L
+Tide 4 In 1 HE Turbo Pods Ultra Oxi Liquid Detergent Pacs,27.45,61 ct
+Gain Aroma Boost Moonlight Breeze Scent HE Compatible Liquid Laundry Detergent,20.85,4.55 L
+Pine-Sol Multi-Surface Lavender Cleaner,6.55,1410 ml
+Vim Power & Shine Cleaner With Bleach Multi-Purpose Spray,4.9,700 ml
+Tide PODS Spring Meadow Scent Liquid Laundry Detergent Pacs,7.65,16 ct
+Ivory Snow Snow Stage 1: Newborn 74 Loads Liquid Laundry Detergent,27.45,3.4 L
+No Name Sans Nom 2 Ply Facial Tissue Cube,2.2,90 ct
+Gain Moonlight Breeze Liquid Fabric Softener,20.85,4.85 L
+Vim Bathroom Spray,4.9,950 ml
+Mr. Clean Summer Citrus Anti-Bacterial Multi-Purpose Cleaner,5.45,1330 ml
+Lysol Summer Fresh Bathroom Cleaner in Trigger Bottle,4.9,950 ml
+Vileda Large Fresh Comfort Gloves,4.9,None
+Pine-Sol Cleaner Liquid,6.55,1410 ml
+No Name Sans Nom Paper Dinner Plates,7.65,40 ct
+Ziploc Freezer Slider Bags Large, with Power Seal Technology,6.0,10 ct
+Resolve Spray 'N Wash Pre-Treat Laundry Stain Remover,6.55,946 ml
+Lysol Green Apple Trigger All Purpose Cleaner,4.9,650 ml
+President's Choice Extra Large Heavy Duty Freezer Bags,7.65,10 ct
+Lysol Complete Clean Toilet Bowl Bleach Cleaner,4.9,710 ml
+President's Choice Large Heavy Duty Freezer Bag Club Pack,12.05,120 ct
+Scrubbing Bubbles Bathroom Cleaner with Bleach Trigger,None,946 ml
+No Name Sans Nom Bleach,3.25,1.27 L
+Fleecy Fabric Softener Sheet Vanilla,6.0,80
+No Name Sans Nom Garbage Bags With Drawstring Cp,16.45,60 ct
+OxiClean Max Force Stain Remover,7.65,354 ml
+No Name Sans Nom Extra Large Qktie Multi Color Bag,17.55,50 ct
+Charmin Ultra Strong Bathroom Tissue Roll Packs,26.35,18 ct
+Lysol Bleach-Free Mold & Mildew Trigger Bathroom Spray Cleaner,4.9,32 fl oz
+Tide 120-Loads Original Scent High Efficiency Formula Laundry Detergent Powder,29.65,4.7 kg
+Kleenex Hand Towels,3.8,60 ct
+Royale Original 2-Ply Bathroom Tissue,21.95,12 ct
+Vileda Short Handle Dust Pan Set,7.7,None
+No Name Sans Nom Cp All Purpose Cloth,7.65,40 ct
+Tide Soft Lavender Scent CleanScent Technology Zero Liquid Laundry Detergent,21.95,3.4 L
+Tide 100 Loads Original HE Compatible Cold Water Clean Liquid Laundry Detergent,27.45,4.55 L
+Downy Fresh Unstopables In-Wash Scent Booster Beads,16.45,422 g
+Loblaws Paper Luncheon Plates - Club Size,16.45,None
+Glad Blue Force Flex Plus Tall Kitchen Drawstring Trash Bags,14.25,50 ct
+Royale Tiger Strong Paper Towel 6 Double Equal 12 Rolls 98 Half Sheets per Roll,21.95,98 ct
+Scrubbing Bubbles Mega Shower Foamer Disinfectant Bathroom Cleaner Aerosol, Rainshower Scent,5.45,567 g
+Vileda Lh Oskar Broom,14.25,None
+Tide Unscented Hygienic Clean Heavy Duty 10x Free Liquid Laundry Detergent for Visible and Invisible Dirt,27.45,4.55 L
+OxiClean Baby Stain Remover,None,651 ml
+OUT! Blue PetCare Waste Pick-Up Bags,None,120 ct
+Persil ProClean Original ProClean Discs,None,16 ct
+Ziploc Storage Bags Large, with Grip 'n Seal Technology,None,19 ct
+Swiffer Fresh Sweeper Wet Mopping Pad Refills for Floor Mop Open Window,None,24 ct
+Ziploc Sandwich Bags, with Grip 'n Seal Technology,None,270 ct
+Downy Unstoppables In Wash Scent Booster Beads,18.65,570 g
+method Mint Glass & Surface Cleaner,5.45,828 ml
+Clorox Liquid Plumr Hair Clog Eliminator,8.75,473 ml
+Gain Flings! Original 3-in-1 Detergent,15.9,1020 g
+Allens Double Strength Cleaning Vinegar,None,950 ml
+President's Choice Max Pt 12=18 Hs,21.95,None
+President's Choice Paper Yard Waste Bag,4.35,5 ct
+Tide Ultra OXI High Efficiency Liquid Laundry Detergent,16.45,2040 ml
+Weiman Stainless Steel Cleaner & Polish With Trigger,8.2,355 ml
+No Name Sans Nom 9" Foam Plates,7.1,100 ct
+Purex After The Rain Liquid Detergent,9.85,2030 ml
+Purex Baby Soft Dirt Lift Action Laundry Liquid,7.65,1470 ml
+Snuggle Cuddle Up 180 Load Fresh Liquid Fabric Softener,19.75,4.25 L
+No Name Sans Nom 10.25" Foam Plates,6.55,50 ct
+President's Choice Ft 3-Ply Facial Tissues Pocket Pack,3.05,80 ct
+Pine-Sol Spring Blossom Multi Surface Cleaner,6.55,1410 ml
+Glad Large Clear Easy-Tie Garbage Bags,13.15,30 ct
+Lysol Ocean Fresh Click Gel Automatic Toilet Bowl Cleaner,5.45,4 ct
+Puffs Plus Lotion White Family-Size Facial Tissue,14.25,496 ct
+Affresh Washing Machine Cleaner,13.15,3 x 40 g
+None,None,None
+None,None,None
+None,None,None
+Glad Large Black Forceflex Trash Bag,25.25,60 ct
+No Name Sans Nom Lavender All Purpose Cleaner,3.8,1410 ml
+SpongeTowels Ultra Choose-a-Size Mega Roll Paper Towels,None,6 ct
+Glad Giant Garbage Bags,24.15,40 ct
+Eco-Max Natural Lavender Laundry Wash,16.15,300 ml
+Purex Baby Soft Liquid Laundry Detergent,18.65,None
+Kleenex 55-Sheet Anti-Viral Facial Tissue,3.8,None
+Unique 9" Red Paper Plates,2.2,16 ct
+CLR Calcium, Lime & Rust Remover Enhanced Formula,10.95,828 ml
+Purex Oxi Plus Dirt Lift Action Liquid Detergent,18.65,4080 ml
+Murphy All Purpose Multi Surface Cleaner Oil Soap,6.55,950 ml
+Weiman Cook Top Cream Cleaner,7.65,460 ml
+Ziploc Storage Bags Medium, with Grip 'n Seal Technology,6.0,28 ct
+Glad Easy Tie Garbage Bags Regular,25.25,100 ct
+Tide Washing Machine Cleaner,9.85,3 x 75 g
+Scrubbing Bubbles Fresh Gel Toilet Cleaning Stamp Dispenser with 6 Gel Stamps, Rainshower Scent,5.45,1.34 oz
+Clorox Disinfecting Liquid Bleach,5.45,1.27 L
+Scotch-Brite Little Handy Scrubber,5.45,None
+No Name Sans Nom All Purpose Scouring Sponges,2.2,2 ct
+Cottonelle Bathroom Tissues,29.65,96 ct
+Cottonelle Gentleplus Flushable Wipes With Aloe & Vitamin E,8.75,84 ct
+Ivory Snow Stage 1: Newborn Liquid Laundry Detergent,13.15,1.36 L
+Tide Free & Gentle Liquid Pods,13.15,775 x 1 g
+SOLO 6.7'' Premium Strength Desert Plates,7.1,30 ct
+Lysol Lemon Breeze All-Purpose Cleaner,13.15,4.25 L
+Febreze Antibacterial Fabric Refresher,6.0,500 ml
+No Name Sans Nom Medium Freezer Reseal Bag,6.55,40 ct
+Fleecy 199-Loads Fresh Air Liquid Fabric Softener,15.35,4.7 L
+Dial Corp Hawaiian Oasis Gel Air Freshener,1.6,198 g
+No Name Sans Nom Resealable Snack Bags,2.7,80 ct
+EASY-OFF Oven Cleaner Heavy Duty Regular Trigger,8.75,475 ml
+Persil ProClean Boosted OXI Power Formula ProClean Discs Laundry Detergent,16.45,38 ct
+Royale 2-Ply Original Facial Tissues,26.35,18 ct
+Tide 10x Heavy Duty Laundry Detergent Liquid Power Pod Pacs,27.45,48 ct
+Scotch-Brite Scour Pad,4.9,4 ct
+Look! Large Oven Bags,3.8,2 ct
+No Name Sans Nom Ocean Fresh Scent Automatic Toilet Bowl Cleaner,3.25,710 ml
+No Name Sans Nom Heavy Duty Steel Wool Soap Pads,4.35,18 ct
+Mr. Clean Lemon Zest Clean Freak Deep Cleaning Mist,8.2,473 ml
+SC Johnson fantastik Trigger All Purpose Cleaner With Bleach,6.0,650 ml
+Charmin Ultra Strong Bathroom Tissue,35.15,6 ct
+Mrs. Meyer's Clean Day Multi Surface Lemon Verbena Everyday Cleaner,6.55,473 ml
+Tide Pods Plus Downy April Fresh Scent 4 in 1 HE Turbo Laundry Detergent Pacs,27.45,61 ct
+OxiClean Stain Remover,4.15,650 ml
+Tide Original Scent Laundry Detergent Pods,None,112 ct
+Kleenex 2-Ply Cool Touch Facial Tissue,None,45 ct
+No Name Sans Nom All Purpose Cellulose Sponge,None,4 ct
+Glad Tall White Easy Tie Unscented Trash Bags,None,30 ct
+No Name Sans Nom Free Clear He Detergent,None,2030 ml
+Tide Laundry Detergent Liquid,7.1,1.09 L
+Bonterra 3-Ply Bath Tissue,8.75,6 ct
+Lysol Lemon All Purpose Pourable Cleaner,4.9,1.2 L
+Vim Pink Flower Cream Cleaner,3.8,500 ml
+Gain Original Fresh Fabric Softener Dryer Sheets,8.75,120 ct
+Bag to Earth Large Waste Bags,8.75,5 ct
+Downy 150 Loads Ultra Fabric Softener Free & Sensitive Liquid,18.65,3810 ml
+Scotch-Brite Heavy Duty Scrub Sponge,8.75,6 ct
+Purex Free & Clear Liquid Detergent for Sensitive Skin,18.65,4.43 L
+Vileda Comfort Medium Fresh Gloves,4.9,None
+OxiClean Versatile Stain Remover With Odour Blasters,10.75,None
+Persil ProClean ProClean PowerLiquid Intense Fresh Laundry Detergent,24.15,4430 ml
+No Name Sans Nom Microfibre Cloth,4.35,None
+Vileda Three Action Long Handled Indoor Broom,12.05,None
+Lysol Disinfectant Toilet Bowl Cleaner Power Value Pack,14.25,3784 ml
+Gain Liquid Laundry Detergent,20.85,4.55 L
+CLR Bathroom & Kitchen Cleaner,10.95,760 ml
+Ziploc Freezer Bags Large, with Grip 'n Seal Technology,16.45,76 ct
+OxiClean Multi-Purpose Baby Stain Remover Powder,10.75,1360 g
+BAG TO EARTH Small Waste Bags,6.55,10 ct
+EASY-OFF Cleaner Fume Free,8.75,400 g
+Downy Infusions Calm Scent Liquid Fabric Conditioner,21.95,752 g
+Swiffer Dry Cloth Unscented,16.45,32 ct
+Tide Liquid Pods Original,13.15,31 ct
+Vileda Sh Enclosed Toilet Set,13.15,None
+Purex Liquid After The Rain 4.43L,None,4430 ml
+President's Choice 88 Sheet Green Paper Towels,8.75,6 ct
+Purex Free & Clear Liquid Detergent For Sensitive Skin,9.85,2030 ml
+Ziploc Freezer Slider Bags Medium, with Power Seal Technology,6.0,15 ct
+No Name Sans Nom Club Size Lemon Scent Bleach,4.35,2.4 L
+Tide Pods Spring Meadow Laundry Detergent,13.15,31 ct
+Snuggle Fresh Cuddle Up Fabric Softener Sheets,8.55,120 ct
+Royale Velour Recyclable Toilet Paper Rolls Pack,24.15,48 ct
+Downy Infusions Lavender & Vanilla Bean Liquid Fabric Enhancer,19.75,2400 ml
+Vileda Scrunge Heavy Duty Sponge,4.9,3 ct
+Tide Free & Gentle HE Compatible Liquid Laundry Detergent,27.45,154 fl oz
+Tide Pods With Downy April Fresh He Turbo Laundry Detergent Pacs,13.15,23 ct
+Cottonelle Bathroom Tissues,18.65,12 ct
+Vileda Dishwand Refill,4.35,None
+Eco-Max Hypoallergenic Laundry Wash,16.15,3000 ml
+No Name Sans Nom Fold Lock Sandwich Bags,2.7,100 ct
+Lysol Laundry Disinfectant Crisp Linen,12.05,1.2 L
+Clorox Liquid-Plumr Foam Pipe Snake,8.75,503 ml
+Tide 107 Loads Original HE Compatible Tide Liquid Laundry Detergent,27.45,154 fl oz
+Seventh Generation Free & Clear Fragrance Free All Purpose Cleaner,8.45,23 fl oz
+Tide Pods Free & Gentle Scent Liquid Laundry Detergent Pacs,36.25,None
+Windex Original Glass and Window Cleaner Refill,9.85,2 L
+Shout Laundry Stain Remover Spray,5.25,650 ml
+Febreze Fabric Refresher Antibacterial,8.2,800 ml
+Kleenex Fsc Pal Mix White Facial Tissue,21.95,2 ct
+Cottonelle Bathroom Tissue Rolls,29.65,312 ct
+Scotch-Brite No Scratch Wand Refill,4.9,2 ct
+Lysol Action Cling Gel Spring Waterfall Toilet Bowl Cleaner,4.9,710 ml
+Ziploc Freezer Bags Small, with Grip 'n Seal Technology,6.0,25 ct
+Lysol Count Action Toilet Bowl Cleaner,5.45,100 g
+SC Johnson fantastik Trigger All-Purpose Cleaner,6.0,650 ml
+Mrs. Meyer's Clean Day Lavender Multi Surface Everyday Cleaner,7.1,473 ml
+Ivory Snow Fragrance Free Hypoallergenic Baby Liquid Laundry Detergent,27.45,None
+No Name Sans Nom Quick-Tie Garbage Bag - Large,6.55,40 ct
+Gain Plus Odor Defense Super Fresh Blast Scent 2-In-1 Liquid Laundry Detergent,20.85,154 fl oz
+Creative Converting Large Clear Treat Bags,1.65,20 ct
+Vim Power & Shine Bath Spray,4.9,700 ml
+No Name Sans Nom Refill Roll Kitchen Bag,4.9,None
+Unique 7" Gold Shiny Metallic Foil Paper Plates,2.45,8 ct
+Nature Clean Lavender Lavender Fields Liquid Laundry Detergent,17.0,3000 ml
+Unique 7" Ruby Red Paper Plates,None,20 ct
+Vim Pure Ocean Oxy Gel All Purpose,None,1000 ml
+Vim Ultra Power Mold Remover With Bleach Spray,None,500 ml
+method Eucalyptus Mint Foaming Tub & Tile Bathroom Cleaner,None,828 ml
+Glad 10.25" Soak Proof Square Disposable Paper Plates,None,50 ct
+Royal Chinet 10 3/8 ''Royal Chinet Plate,None,125 ct
+Pine-Sol Multi-Surface Cleaner Original,16.45,4.25 L
+Tide 36 Loads High Efficiency Turbo Clean Coldwater Clean Fresh Scent Liquid Laundry Detergent,16.45,2040 ml
+Vileda Sensitive Cotton Gloves,3.8,1 ct
+Downy Amber Rose Infusiins Liquid Fabric Softener,19.75,2400 ml
+President's Choice Medium Heavy Duty Freezer Bags,7.65,38 ct
+Kleenex 3-Ply Ultra Soft Facial Tissues Flat Boxes,13.15,3 ct
+Tide Plus Downy April Fresh Liquid Laundry Detergent,16.45,2040 ml
+Mr. Clean Clean Freak Lemon Zest Deep Cleaning Mist Refill,5.45,473 ml
+Downy Unstopables In-Wash Scent Booster Beads,21.95,None
+Downy 120 Loads April Fresh Ultra Liquid Fabric Softener,16.45,3060 ml
+Gain Moonlight Breeze Scent Aroma Boost Liquid Laundry Detergent,15.35,None
+Woolite Darks Laundry Detergent With Colour Renew,21.95,2.6 L
+No Name Sans Nom Paper Dessert Plates Club Size,14.8,None
+Downy Ocean Mist With No Heavy Perfumes Light Laundry Scent Booster Beads For Washer,21.95,752 g
+Tide Original Hygienic Clean Heavy 10x Duty Power PODS Laundry Detergent,36.25,None
+Royale Velour, Plush & Thick Toilet Paper, 30 Equal 96 Rolls, 228 Bath Tissues Per Roll,32.95,None
+Mr. Clean Meadows & Rain Liquid Cleaner With Febreze,13.15,3800 ml
+Pine-Sol Lavender Multi-Surface Cleaner,16.45,4250 ml
+Fleecy Fresh Air 110 Loads Liquid Fabric Softener,10.75,2.6 L
+Snuggle Original In-Wash Scent Booster,10.95,538 g
+Fleecy Sensations Brazilian Paradise HE 39 Loads Softener,8.2,1.36 L
+Bon Ami Aerosol Power Foam Glass Cleaner,6.55,560 g
+No Name Sans Nom Sobrite Window Cleaner,2.2,765 ml
+Febreze Fabric Heavy Duty Refresher Crisp Clean,8.75,800 ml
+Persil ProClean OXI Power Liquid Laundry Detergent Soap,24.15,4.43 L
+Downy Unstoppables In-Wash Lush Scented Booster Beads,16.45,422 g
+Fleecy Calm Aroma Therapy Fabric Softener Dryer Sheets,12.05,200 ct
+Purex Cold Water Liquid Detergent,9.85,2030 ml
+Ziploc Freezer Bags Medium, with Grip 'n Seal Technology,16.45,100 ct
+method Apple Orchard Daily Granite Cleaner,8.75,828 ml
+Glad Tall 45 Litres White Febreze Fresh Clean Scent Garbage Trash Bags Value Pack,32.95,160 ct
+Glad 100% Compostable OdourShield Easy Tie Small Bags Lemon Scent,16.45,44 ct
+Downy April Fresh Fabric Conditioner Liquid Laundry Detergent,21.95,4.85 L
+Resolve In Wash Oxi-Action Detergent Powder,12.05,1.35 g
+Tide Original Scent Pods Laundry Detergent Pacs,27.45,81 ct
+Scotch-Brite Household Scrubber,7.1,None
+No Name Sans Nom Household Cleaning Lemon Skin Care,1.1,400 g
+No Name Sans Nom Club Size Paper Dinner Plates,None,each
+Eco-Max Natural Tea Tree Toilet Bowl Cleaner,6.0,1000 ml
+Glad 8.5" Square Disposable Paper Plates,9.85,50 ct
+Gain Flings Moonlight Breeze Laundry Detergent,27.45,81 ct
+Cottonelle Fresh Care Flushable Wipes Tub,5.45,42 ct
+Vileda Powerpad,3.6,None
+Purex UCL Oxi Plus Laundry Detergent,9.85,1920 ml
+Tide Liquid Laundry Detergent With A Touch Of Downy April Fresh HE Compatible,27.45,None
+Persil ProClean Proclean Original Liquid Detergent,24.15,150 fl oz
+CLR Mold & Mildew Stain Remover,10.95,946 ml
+No Name Sans Nom Drain Opener,5.45,900 ml
+President’s Choice Toilet Bowl Cleaner,3.6,710 ml
+Scrubbing Bubbles Mega Shower Foamer Disinfectant Bathroom Cleaner Trigger, Rainshower Scent,5.45,946 ml
+Lysol Orange Scent Multi Purpose Cleaner,4.9,1200 ml

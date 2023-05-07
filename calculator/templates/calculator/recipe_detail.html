@@ -1,0 +1,142 @@
+<h1 class="recipeTitle"> {{recipe.recipe_name}} </h1>
+{% load static %}
+<link href="{% static 'recipe_detail.css' %}" rel="stylesheet"/>
+<script src = '{% static "js/jquery.js" %}'></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+<ul id="ing_list">
+{% for ing in ing_list %}
+<li id={{ing.id}}>{{ing.base_ing.ing_name}} price per unit: {{ing.base_ing.price_per_unit}} Quantity: {{ing.item_mass}} Item price: {{ing.calulcate_price}} <form action="{% url 'calculator:ring_delete' ing.id %}" method="POST" id="delete" name="delete">{% csrf_token %}<button onclick=delElement(event)>Delete</button></form></li>
+{% endfor %}
+</ul>
+
+{% load bootstrap5 %}
+
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+
+
+<br>
+<form action="" method="post">
+  {% csrf_token %}
+  Serving size:<input type="number" name="servings" value={{servings}}>
+ <input type="submit" value="Submit" id="sButton">
+</form>
+
+Total recipe price: {{prices.0}} Price per serving: <span id="serving_price">{{prices.1}}</span>
+
+
+<br>
+<br>
+<form action="" method="POST" id="ing_data">
+  {% csrf_token %}
+  <input name="ing_name" id=name>
+  <input name="ing" id="hiddenIng" hidden="true">
+  <input type="text" name="quan" value="" id=quan>
+  </select>
+  <input type="submit" value="Submit" id="Submit">
+</form>
+
+
+
+
+<script>
+var foods = []
+
+{% for ing in base_ing %}
+foods.push({"label":"{{ing.ing_name}}", "val":{{ing.id}}})
+{% endfor %}
+
+$("#name").autocomplete({source:foods, select: function(event, ui){
+  $("#name").val(ui.item.label)
+  $("#hiddenIng").val(ui.item.val)
+}})
+
+let submitbutton = document.getElementById("Submit");
+
+
+var addItem = function(event){
+  event.preventDefault();
+  var ingData = new FormData(document.getElementById("ing_data"));
+  var name = document.getElementById("name");
+
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      var dict = JSON.parse(xhttp.response);
+      var del_button = document.createElement("form")
+      var del_button_element = document.createElement("button")
+
+      var ul = document.getElementById("ing_list");
+      var li = document.createElement("li");
+      li.setAttribute("id", dict["obj_id"]);
+      var token = document.createElement("input");
+
+      token.name = "csrfmiddlewaretoken";
+      token.value = dict["csrf"];
+      token.type = "hidden";
+
+      del_button.method = "POST"
+      del_button.action = dict["del_url"];
+      del_button_element.innerHTML = "Delete"
+      del_button_element.setAttribute("id", dict["obj_id"])
+      del_button.appendChild(del_button_element);
+      del_button.appendChild(token);
+      del_button_element.addEventListener("click", delElement);
+
+
+      li.innerHTML = dict["name"] + " price per unit: " + dict["price"] + " Quantity: " + dict["mass"] + " Item Price: " + dict["total_price"];
+
+      li.appendChild(del_button);
+      ul.appendChild(li);
+
+    }
+  };
+  xhttp.open("POST", "", true);
+  xhttp.send(ingData);
+}
+submitbutton.addEventListener("click",addItem);
+
+var delElement = function(event){
+  event.preventDefault();
+
+  var xhttp = new XMLHttpRequest();
+  var button = event.target;
+  var form = button.parentElement;
+  var rec_id = form.parentElement.id;
+  var sendData = new FormData(form);
+  sendData.set("id", rec_id);
+
+  xhttp.onreadystatechange = function(){
+    if(this.readyState == 4 && this.status == 200){
+      var responseText = JSON.parse(xhttp.response);
+      if(responseText == "deleted"){
+        var li = document.getElementById(rec_id);
+        li.parentElement.removeChild(li);
+
+      }
+    }
+  }
+
+  xhttp.open("POST", form.action, true);
+  xhttp.send(sendData);
+}
+
+
+var changeServing = function(event){
+  event.preventDefault()
+  var servingSize = $(this).parent().find("[name=servings]").val();
+  console.log(servingSize);
+  $.post("", $(this).parent().serialize(), function(data){
+    $("#serving_price").text(data["perSprice"][1]);
+  })
+}
+
+$("#sButton").click(changeServing);
+
+
+
+
+
+</script>

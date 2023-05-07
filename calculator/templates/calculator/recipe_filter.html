@@ -1,0 +1,130 @@
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{% load static %}
+
+
+<link rel="stylesheet" href='{% static "static.css" %}'>
+<script src = '{% static "js/jquery.js" %}'></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+
+<h1 class="tHead">All recipes</h1>
+
+<div name='filters'>
+    <div class="btn-group">
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle marginFix" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="dateBut">
+            Date created
+            </button>
+            <ul class="dropdown-menu" id="date">
+                <li><a class="dropdown-item" href="#">Newest</a></li>
+                <li><a class="dropdown-item" href="#">Oldest</a></li>
+            </ul>
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle marginFix" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="nameBut">
+            Name
+            </button>
+            <ul class="dropdown-menu" id="name">
+                <li><a class="dropdown-item" href="#">Ascending</a></li>
+                <li><a class="dropdown-item" href="#">Descending</a></li>
+            </ul>
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle marginFix" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="priceBut">
+            Price
+            </button>
+            <ul class="dropdown-menu", id="price">
+                <li><a class="dropdown-item" href="#">Ascending</a></li>
+                <li><a class="dropdown-item" href="#">Descending</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="input-group">
+        <div class="input-group mb-3 NumIngFilter marginFix" >
+            <span class="input-group-text" id="inputGroup-sizing-default">Min Ingrents</span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="minIng">
+        </div>
+        <div class="input-group mb-3 NumIngFilter marginFix" >
+            <span class="input-group-text" id="inputGroup-sizing-default">Max Ingrents</span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="maxIng">
+        </div>
+    </div>
+
+    <button type="button" class="btn btn-primary" id="applyBut">Apply filters</button>
+
+
+
+</div>
+
+<div class="col" id="hidden">
+    <div class="card">
+      <img src="{% static '051-1.jpg' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">recipe.name</h5>
+        <p class="card-text">recipe.des</p>
+      </div>
+    </div>
+  </div>
+
+<div class="row row-cols-1 row-cols-md-2 g-4" id = recipeContainer>
+    
+</div>
+
+<script>
+    
+    var filters = {"Price": "null", "Name": "null", "Date": "null", "minIng": "null", "maxIng": "null"}
+
+    var populatePage = function(data){
+        console.log(data)
+        $("#recipeContainer").empty();
+        for(var i=0; i<data.length; i++){
+            let li = $("#hidden").clone();
+            li.find(".card-title").text(data[i].recipe_name);
+            li.find(".card-text").text(data[i].descripton);
+            li.find(".card-title").wrapInner("<a href=\""+ data[i].url +"\"></a>")
+            li.attr("id", "newID");
+            $("#recipeContainer").append(li);
+        }
+    }
+
+    $(document).ready(function(){
+        $.post(window.location.href, filters, populatePage);
+    });
+
+    $("#name li").click(function(){
+        $("#nameBut").text("Name: " + $(this).text());
+        filters["Name"] = $(this).text();
+    });
+
+    $("#price li").click(function(){
+        $("#priceBut").text("Price: " + $(this).text());
+        filters["Price"] = $(this).text();
+        
+    })
+
+    $("#date li").click(function(){
+        $("#dateBut").text("Date: " + $(this).text());
+        filters["Date"] = $(this).text();
+    })
+
+    $("#minIng").change(function(){
+        filters["minIng"] = $("#minIng").val();
+        console.log(filters["minIng"]);
+    })
+
+    $("#maxIng").change(function(){
+        filters["maxIng"] = $("#maxIng").val();
+        
+    })
+
+    
+
+    $("#applyBut").click(function(){
+        $.post(window.location.href, filters, populatePage);
+    })
+
+</script>
