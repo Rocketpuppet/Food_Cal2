@@ -30,7 +30,7 @@
           <small name="timestamp">{{recipe.parse_time}}</small>
         </div>
         <p class="mb-1" name="desc">{{recipe.descripton}}</p>
-        <form action="{% url 'calculator:recipe_delete' recipe.id %}" method = "POST">{% csrf_token %}<button id='delete' name='delete' class='btn btn-danger'>Delete</button></form>
+        <form action="{% url 'calculator:recipe_delete' recipe.id %}" method = "POST">{% csrf_token %}<button id='{{recipe.id}}' name='delete' class='btn btn-danger'>Delete</button></form>
       </div>
       {% endfor %}
     </div>
@@ -76,13 +76,13 @@ var delElement = function(event){
     event.preventDefault();
     var element = $(this).parent().parent();
     $.post($(this).parent().attr("action"),
-    $(this).parent().serialize() + "&id=" + $(this).parent().parent().attr("id"),
+    $(this).parent().serialize() + "&id=" + $(this).attr("id"),
     function(data){
       if(data=="Deleted"){
         element.remove();
       }
     });
-    console.log($(this).parent().serialize() + "&id=" + $(this).parent().parent().attr("id"));
+    console.log($(this).parent().serialize() + "&id=" + $(this).attr("id"));
 }
 $(document).ready(function(){
   console.log("ready");

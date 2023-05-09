@@ -47,6 +47,7 @@ class HomePage(generic.ListView):
 
         return JsonResponse(data)
 
+    
     @staticmethod
     def delete(request, id):
         recipe = get_object_or_404(Recipe, id=id)
