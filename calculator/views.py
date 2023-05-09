@@ -146,7 +146,8 @@ class RecipeFilterPage(generic.ListView):
 
         return JsonResponse(SerializedObj,safe=False)
         
-
+        
+@method_decorator(csrf_exempt, name='dispatch')
 class RecipeDetailPage(generic.DetailView):
 
     model = Recipe
