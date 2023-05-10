@@ -47,7 +47,7 @@ class HomePage(generic.ListView):
 
         return JsonResponse(data)
 
-    @csrf_exempt
+    
     @staticmethod
     def delete(request, id):
         recipe = get_object_or_404(Recipe, id=id)
@@ -146,6 +146,7 @@ class RecipeFilterPage(generic.ListView):
 
 
         return JsonResponse(SerializedObj,safe=False)
+        
         
 @method_decorator(csrf_exempt, name='dispatch')
 class RecipeDetailPage(generic.DetailView):
