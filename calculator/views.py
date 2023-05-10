@@ -47,7 +47,7 @@ class HomePage(generic.ListView):
 
         return JsonResponse(data)
 
-    
+    @csrf_exempt
     @staticmethod
     def delete(request, id):
         recipe = get_object_or_404(Recipe, id=id)
@@ -67,6 +67,7 @@ class HomePage(generic.ListView):
             "del_url":reverse("calculator:recipe_delete", kwargs={"id" : recipe.id}),
             "url": reverse("calculator:ing_list", kwargs={"pk" : recipe.id})})
         return JsonResponse(response, safe=False)
+
 
 @method_decorator(csrf_exempt, name='dispatch')
 class RecipeFilterPage(generic.ListView):
@@ -146,7 +147,7 @@ class RecipeFilterPage(generic.ListView):
 
         return JsonResponse(SerializedObj,safe=False)
         
-
+@method_decorator(csrf_exempt, name='dispatch')
 class RecipeDetailPage(generic.DetailView):
 
     model = Recipe
@@ -203,6 +204,7 @@ class RecipeDetailPage(generic.DetailView):
 
         return context
 
+    @csrf_exempt
     @staticmethod
     def delete_ing(request, id):
         Ing = get_object_or_404(RecipeIng, id=id)
