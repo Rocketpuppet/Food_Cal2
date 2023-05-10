@@ -204,6 +204,7 @@ class RecipeDetailPage(generic.DetailView):
 
         return context
 
+    @csrf_exempt
     @staticmethod
     def delete_ing(request, id):
         Ing = get_object_or_404(RecipeIng, id=id)
