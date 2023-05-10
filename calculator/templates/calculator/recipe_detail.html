@@ -24,7 +24,7 @@
  <input type="submit" value="Submit" id="sButton">
 </form>
 
-Total recipe price: {{prices.0}} Price per serving: <span id="serving_price">{{prices.1}}</span>
+Total recipe price: <span id="total_price">{{prices.0}}</span> Price per serving: <span id="serving_price">{{prices.1}}</span>
 
 
 <br>
@@ -91,6 +91,10 @@ var addItem = function(event){
       li.appendChild(del_button);
       ul.appendChild(li);
 
+      $("#serving_price").text(dict["perSprice"][1])
+      $("#total_price").text(dict["perSprice"][0])
+      console.log("price changed")
+
     }
   };
   xhttp.open("POST", "", true);
@@ -110,11 +114,12 @@ var delElement = function(event){
 
   xhttp.onreadystatechange = function(){
     if(this.readyState == 4 && this.status == 200){
-      var responseText = JSON.parse(xhttp.response);
-      if(responseText == "deleted"){
+      var dict = JSON.parse(xhttp.response);
+      if(dict["del"] == "Deleted"){
         var li = document.getElementById(rec_id);
+        $("#serving_price").text(dict["perSprice"][1]);
+        $("#total_price").text(dict["perSprice"][0]);
         li.parentElement.removeChild(li);
-
       }
     }
   }
@@ -130,6 +135,7 @@ var changeServing = function(event){
   console.log(servingSize);
   $.post("", $(this).parent().serialize(), function(data){
     $("#serving_price").text(data["perSprice"][1]);
+    $("#total_price").text(data["perSprice"][0])
   })
 }
 

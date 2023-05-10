@@ -180,7 +180,8 @@ class RecipeDetailPage(generic.DetailView):
             "del_url" : reverse("calculator:ring_delete", kwargs={'id':newRecipeIng.id}),
             "csrf" : get_token(request),
             "obj_id" : newRecipeIng.id,
-            "total_price" : newRecipeIng.calulcate_price()
+            "total_price" : newRecipeIng.calulcate_price(),
+            "perSprice" : self.get_object().calulcate_price(),
 
             }
 
@@ -209,9 +210,14 @@ class RecipeDetailPage(generic.DetailView):
     @staticmethod
     def delete_ing(request, id):
         Ing = get_object_or_404(RecipeIng, id=id)
+        recipe = Ing.recipe
         Ing.delete()
+        data = {
+            "perSprice" : recipe.calulcate_price(),
+            "del" : "Deleted"
+        }
 
-        return JsonResponse("deleted", safe=False)
+        return JsonResponse(data, safe=False)
 
 
 @method_decorator(csrf_exempt, name='dispatch')
