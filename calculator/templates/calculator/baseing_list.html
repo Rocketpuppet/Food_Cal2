@@ -1,15 +1,37 @@
 
 {% load static %}
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
 <link href="{% static 'static.css' %}" rel="stylesheet"/>
 <script src = '{% static "js/jquery.js" %}'></script>
 <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
 <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand animate-charcter" href="#">Recipe Price<br>Calculator</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-<ul>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'calculator:homepage' %}">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'calculator:base_list' %}">Base ingredients</a><span class="sr-only">(current)</span></a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+
+<ul class = "list-group">
 {% for ing in object_list %}
 
-<li id = {{ing.id}}>Ingredent Name: {{ing.ing_name}} Price per unit: {{ing.price_per_unit}}  Measurement type: {{ing.measurement_type}}
-  <form action="{% url 'calculator:ing_delete' ing.id %}" method="POST" name="delButton" id="{{ing.id}}">{% csrf_token %}<button>Delete</button></form></li>
+
+<li id = {{ing.id}} class="list-group-item">Ingredent Name: {{ing.ing_name}} Package Price: {{ing.package_price}}  Measurement type: {{ing.measurement_type}} Package Size: {{ing.package_size}} Price per unit: {{ing.price_per_unit}}
+  <form action="{% url 'calculator:ing_delete' ing.id %}" method="POST" name="delButton" id="{{ing.id}}">{% csrf_token %}<button class="fill">Delete</button></form></li>
 
 {% endfor %}
 
@@ -21,8 +43,10 @@
   <form action="" method="POST">
     {% csrf_token %}
     Ingredent name: <input type="text" name="ing_name" value="">
-    Price per unit:
-    <input type="text" name="price_per_unit" value = "">
+    Package Price:
+    <input type="text" name="package_price" value = "">
+    Package Size:
+    <input type="text" name="package_size" value = "">
     Measurement type:
     <select name="m_u">
       <option value="mL">mL</option>>

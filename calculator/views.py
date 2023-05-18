@@ -176,13 +176,12 @@ class RecipeDetailPage(generic.DetailView):
             data = {
             "mass" : newRecipeIng.item_mass,
             "name" : newRecipeIng.base_ing.ing_name,
-            "price" : newRecipeIng.base_ing.price_per_unit,
+            "price" : newRecipeIng.base_ing.price_per_unit(),
             "del_url" : reverse("calculator:ring_delete", kwargs={'id':newRecipeIng.id}),
             "csrf" : get_token(request),
             "obj_id" : newRecipeIng.id,
             "total_price" : newRecipeIng.calulcate_price(),
             "perSprice" : self.get_object().calulcate_price(),
-
             }
 
             return JsonResponse(data)
@@ -226,14 +225,13 @@ class BaseIngPage(generic.ListView):
     model = BaseIng
 
     def post(self,request,*args,**kwargs):
-        if request.POST.get('ing_name') and request.POST.get('price_per_unit'):
-            new_base = BaseIng(ing_name = request.POST.get('ing_name'), price_per_unit = request.POST.get('price_per_unit'), measurement_type=request.POST.get('m_u'))
+        if request.POST.get('ing_name') and request.POST.get('package_price'):
+            new_base = BaseIng(ing_name = request.POST.get('ing_name'), package_price = request.POST.get('package_price'), measurement_type=request.POST.get('m_u'), package_size = request.POST.get('package_size'))
             new_base.save()
 
             return HttpResponseRedirect(reverse("calculator:base_list"))
        
         else:
-
             Ing = get_object_or_404(BaseIng, id=request.POST.get('id'))
             Ing.delete()
             return JsonResponse("deleted", safe=False)

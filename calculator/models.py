@@ -3,8 +3,9 @@ import csv
 
 class BaseIng(models.Model):
     ing_name = models.CharField(max_length=200)
-    price_per_unit = models.FloatField()
     measurement_type = models.CharField(max_length=200)
+    package_price = models.FloatField()
+    package_size = models.FloatField()
 
     def __str__(self):
         return self.ing_name
@@ -15,6 +16,11 @@ class BaseIng(models.Model):
 
         for line in csv_reader:
             print(line['FoodDescription'])
+
+    def price_per_unit(self):
+        return round(self.package_price/self.package_size, 3)
+
+    
 
 
 
@@ -48,7 +54,8 @@ class RecipeIng(models.Model):
     base_ing = models.ForeignKey(BaseIng, on_delete=models.CASCADE)
 
     def calulcate_price(self):
-        return round(self.base_ing.price_per_unit*self.item_mass, 2)
+        return round(self.base_ing.price_per_unit()*self.item_mass, 2)
 
     def __str__(self):
         return self.base_ing.ing_name
+    

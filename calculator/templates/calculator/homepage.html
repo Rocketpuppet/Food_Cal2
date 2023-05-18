@@ -1,15 +1,31 @@
 {% load static %}
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
 <link href="{% static 'static.css' %}" rel="stylesheet"/>
 <script src = '{% static "js/jquery.js" %}'></script>
 <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
 <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 
-{% load bootstrap5 %}
 
-{% bootstrap_css %}
-{% bootstrap_javascript %}
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand animate-charcter" href="#">Recipe Price<br>Calculator</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-<h1 class="tHead">Recipe Price Calculator</h1>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'calculator:homepage' %}"><span>Home</span><span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'calculator:base_list' %}"><span>Base ingredients</span></a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
 
   <input class ="lookupBar" name="search" id="search">
 

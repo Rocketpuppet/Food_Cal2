@@ -1,19 +1,41 @@
-<h1 class="recipeTitle"> {{recipe.recipe_name}} </h1>
 {% load static %}
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand animate-charcter" href="#">Recipe Price<br>calculator</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'calculator:homepage' %}">Home</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'calculator:base_list' %}">Base ingrenties</a>
+      </li>
+
+    </ul>
+    </div>
+</nav>
+
+<h1 class="recipeTitle"> {{recipe.recipe_name}} </h1>
+
+
 <link href="{% static 'recipe_detail.css' %}" rel="stylesheet"/>
 <script src = '{% static "js/jquery.js" %}'></script>
 <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
 <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-<ul id="ing_list">
+<ul id="ing_list" class = "list-group">
+
 {% for ing in ing_list %}
-<li id={{ing.id}}>{{ing.base_ing.ing_name}} price per unit: {{ing.base_ing.price_per_unit}} Quantity: {{ing.item_mass}} Item price: {{ing.calulcate_price}} <form action="{% url 'calculator:ring_delete' ing.id %}" method="POST" id="delete" name="delete">{% csrf_token %}<button onclick=delElement(event)>Delete</button></form></li>
+<li id={{ing.id}}><span>{{ing.base_ing.ing_name}} price per unit: {{ing.base_ing.price_per_unit}} Quantity: {{ing.item_mass}} Item price: {{ing.calulcate_price}}</span><form action="{% url 'calculator:ring_delete' ing.id %}" method="POST" id="delete" name="delete">{% csrf_token %}<button class ="button-3" onclick=delElement(event)>Delete</button></form></li>
 {% endfor %}
 </ul>
 
-{% load bootstrap5 %}
-
-{% bootstrap_css %}
-{% bootstrap_javascript %}
 
 
 
@@ -25,7 +47,6 @@
 </form>
 
 Total recipe price: <span id="total_price">{{prices.0}}</span> Price per serving: <span id="serving_price">{{prices.1}}</span>
-
 
 <br>
 <br>
@@ -93,7 +114,6 @@ var addItem = function(event){
 
       $("#serving_price").text(dict["perSprice"][1])
       $("#total_price").text(dict["perSprice"][0])
-      console.log("price changed")
 
     }
   };
