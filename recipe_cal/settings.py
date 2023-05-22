@@ -34,7 +34,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'cg#p$g+j9tax!#a3cup@1$8obt2_+&
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
 
-ALLOWED_HOSTS = ['foodcal2-production.up.railway.app','www.foodpricecalcualtor.store','127.0.0.1']
+ALLOWED_HOSTS = ['foodcal2-production.up.railway.app','https://www.foodpricecalcualtor.store','127.0.0.1']
 
 
 # Application definition
