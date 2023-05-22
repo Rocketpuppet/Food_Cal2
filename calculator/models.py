@@ -52,8 +52,7 @@ class RecipeIng(models.Model):
     item_mass = models.FloatField()
     recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE)
     base_ing = models.ForeignKey(BaseIng, on_delete=models.CASCADE)
-    test = models.FloatField()
-
+    
     def calulcate_price(self):
         return round(self.base_ing.price_per_unit()*self.item_mass, 2)
 
