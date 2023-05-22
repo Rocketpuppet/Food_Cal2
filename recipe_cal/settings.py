@@ -150,7 +150,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 ## For example, for a site URL is at 'web-production-3640.up.railway.app'
 ## (replace the string below with your own site URL):
-CSRF_TRUSTED_ORIGINS = ['foodcal2-production.up.railway.app', 'www.foodpricecalcualtor.store']
+CSRF_TRUSTED_ORIGINS = ['foodcal2-production.up.railway.app', 'https://www.foodpricecalcualtor.store/']
 
 # During development/for this tutorial you can instead set just the base URL
 # CSRF_TRUSTED_ORIGINS = ['https://*.railway.app']
