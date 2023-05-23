@@ -9,6 +9,8 @@
 <span class="navbar-toggler-icon"></span>
 </button>
 
+
+
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
@@ -21,6 +23,8 @@
     </ul>
     </div>
 </nav>
+
+
 
 <h1 class="recipeTitle"> {{recipe.recipe_name}} </h1>
 
@@ -72,6 +76,12 @@ foods.push({"label":"{{ing.ing_name}}", "val":{{ing.id}}})
 $("#name").autocomplete({source:foods, select: function(event, ui){
   $("#name").val(ui.item.label)
   $("#hiddenIng").val(ui.item.val)
+}, change : function(event, ui){
+  for (var i = 0; i < foods.length; i++) {
+  if (foods[i].label == $("#name").val()){
+    $("#hiddenIng").val(foods[i].val)
+  }
+}
 }})
 
 let submitbutton = document.getElementById("Submit");
@@ -102,6 +112,7 @@ var addItem = function(event){
       del_button.action = dict["del_url"];
       del_button_element.innerHTML = "Delete"
       del_button_element.setAttribute("id", dict["obj_id"])
+      del_button_element.setAttribute("class", "button-3")
       del_button.appendChild(del_button_element);
       del_button.appendChild(token);
       del_button_element.addEventListener("click", delElement);
